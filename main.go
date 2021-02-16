@@ -16,24 +16,39 @@ func main() {
 	*/
 
 	fmt.Println(models.Db)
+
+	u := &models.User{}
+	u.Name = "test3"
+	u.Email = "test3@example.com"
+	u.Password = "test3test3"
+	fmt.Println(u)
+
+	u.CreateUser()
+	//user, _ := models.GetUser(2)
+	//fmt.Println(user)
 	/*
-		u := &models.User{}
-		u.Name = "test"
-		u.Email = "test@example.com"
-		u.Password = "testtest"
+		u, _ := models.GetUser(1)
+		fmt.Println(u)
+		u.Name = "Test2"
+		u.Email = "test2@example.com"
+		u.UpdateUser()
+		u, _ = models.GetUser(1)
 		fmt.Println(u)
 
-		u.CreateUser()
+		u.DeleteUser()
+		u, _ = models.GetUser(1)
+		fmt.Println(u)
 	*/
-	u, _ := models.GetUser(1)
-	fmt.Println(u)
-	u.Name = "Test2"
-	u.Email = "test2@example.com"
-	u.UpdateUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
 
-	u.DeleteUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	//t, _ := models.GetTodo(1)
+	//fmt.Println(t)
+
+	//u, _ := models.GetUser(0)
+	//u.CreateTodo("Second Todo")
+	//todos, _ := models.GetTodos()
+	//for _, v := range todos {
+	//	fmt.Println(v)
+	//}
+	t, _ := models.GetTodo(3)
+	t.DeleteTodo()
 }
