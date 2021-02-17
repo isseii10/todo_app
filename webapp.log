@@ -989,3 +989,1215 @@ net/http.(*conn).serve(0x1400012f860, 0x104c5f080, 0x14000151380)
 	/usr/local/go/src/net/http/server.go:1952 +0x710
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:00 server.go:3139: http: panic serving 127.0.0.1:61009: template: index.html:2: unexpected "{" in command
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x1400012f360)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000012130)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a1c0, 0x1014be7e0, 0x1400018c400, 0x14000131918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a1c0, 0x14000204000)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a1c0, 0x14000204000)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a1c0, 0x14000204000)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a1c0, 0x14000204000)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f360, 0x1014ec4a0, 0x1400002a080)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:00 server.go:3139: http: panic serving 127.0.0.1:61010: template: index.html:2: unexpected "{" in command
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x1400012f400)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140000123d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x140002380e0, 0x1014be7e0, 0x14000212480, 0x14000131918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x140002380e0, 0x14000204100)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x140002380e0, 0x14000204100)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x140002380e0, 0x14000204100)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x140002380e0, 0x14000204100)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f400, 0x1014ec4a0, 0x140001504c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:00 server.go:3139: http: panic serving 127.0.0.1:61011: template: index.html:2: unexpected "{" in command
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0x1400012f4a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000113450)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a380, 0x1014be7e0, 0x1400018c780, 0x14000137918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a380, 0x1400017a100)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a380, 0x1400017a100)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a380, 0x1400017a100)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a380, 0x1400017a100)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f4a0, 0x1014ec4a0, 0x14000150740)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:01 server.go:3139: http: panic serving 127.0.0.1:61012: template: index.html:2: unexpected "{" in command
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0x1400028a000)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000290290)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a0e0, 0x1014be7e0, 0x14000284300, 0x140002b9918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a0e0, 0x1400017a300)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a0e0, 0x1400017a300)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a0e0, 0x1400017a300)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a0e0, 0x1400017a300)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a000, 0x1014ec4a0, 0x14000150bc0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:01 server.go:3139: http: panic serving 127.0.0.1:61013: template: index.html:2: unexpected "{" in command
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0x1400028a0a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000113560)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x140002382a0, 0x1014be7e0, 0x14000212a80, 0x14000131918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x140002382a0, 0x14000294000)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x140002382a0, 0x14000294000)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x140002382a0, 0x14000294000)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x140002382a0, 0x14000294000)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a0a0, 0x1014ec4a0, 0x1400028e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:01 server.go:3139: http: panic serving 127.0.0.1:61014: template: index.html:2: unexpected "{" in command
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0x1400028a140)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000012820)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x14000238460, 0x1014be7e0, 0x14000212d80, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x14000238460, 0x14000294100)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x14000238460, 0x14000294100)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x14000238460, 0x14000294100)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x14000238460, 0x14000294100)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a140, 0x1014ec4a0, 0x1400028e4c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:04 server.go:3139: http: panic serving 127.0.0.1:61015: template: index.html:2: unexpected "{" in command
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0x1400028a1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000290560)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a1c0, 0x1014be7e0, 0x14000284980, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a1c0, 0x14000204200)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a1c0, 0x14000204200)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a1c0, 0x14000204200)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a1c0, 0x14000204200)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a1e0, 0x1014ec4a0, 0x1400028e5c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:04 server.go:3139: http: panic serving 127.0.0.1:61016: template: index.html:2: unexpected "{" in command
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0x1400028a280)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000012b70)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x14000238620, 0x1014be7e0, 0x14000213280, 0x140002b5918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x14000238620, 0x14000294200)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x14000238620, 0x14000294200)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x14000238620, 0x14000294200)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x14000238620, 0x14000294200)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a280, 0x1014ec4a0, 0x1400028e540)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:04 server.go:3139: http: panic serving 127.0.0.1:61017: template: index.html:2: unexpected "{" in command
+goroutine 47 [running]:
+net/http.(*conn).serve.func1(0x1400028a320)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000290810)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a2a0, 0x1014be7e0, 0x14000284e80, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a2a0, 0x14000294400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a2a0, 0x14000294400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a2a0, 0x14000294400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a2a0, 0x14000294400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a320, 0x1014ec4a0, 0x1400028ea40)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:04 server.go:3139: http: panic serving 127.0.0.1:61018: template: index.html:2: unexpected "{" in command
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0x14000332000)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000290ac0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a380, 0x1014be7e0, 0x14000285300, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a380, 0x14000294500)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a380, 0x14000294500)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a380, 0x14000294500)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a380, 0x14000294500)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000332000, 0x1014ec4a0, 0x1400028eec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:04 server.go:3139: http: panic serving 127.0.0.1:61019: template: index.html:2: unexpected "{" in command
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0x140003320a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000012e20)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x14000238700, 0x1014be7e0, 0x14000213800, 0x140002b5918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x14000238700, 0x14000204300)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x14000238700, 0x14000204300)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x14000238700, 0x14000204300)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x14000238700, 0x14000204300)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140003320a0, 0x1014ec4a0, 0x1400002b1c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:04 server.go:3139: http: panic serving 127.0.0.1:61020: template: index.html:2: unexpected "{" in command
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0x1400012f540)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000113810)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a460, 0x1014be7e0, 0x1400018ce80, 0x14000131918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a460, 0x1400017a400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a460, 0x1400017a400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a460, 0x1400017a400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a460, 0x1400017a400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f540, 0x1014ec4a0, 0x14000150e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:05 server.go:3139: http: panic serving 127.0.0.1:61021: template: index.html:2: unexpected "{" in command
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0x14000332140)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140000130d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x140002387e0, 0x1014be7e0, 0x14000213d80, 0x140002b5918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x140002387e0, 0x1400017a500)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x140002387e0, 0x1400017a500)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x140002387e0, 0x1400017a500)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x140002387e0, 0x1400017a500)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000332140, 0x1014ec4a0, 0x14000151300)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:05 server.go:3139: http: panic serving 127.0.0.1:61022: template: index.html:2: unexpected "{" in command
+goroutine 62 [running]:
+net/http.(*conn).serve.func1(0x140003321e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000290d50)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a460, 0x1014be7e0, 0x14000285800, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a460, 0x14000204400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a460, 0x14000204400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a460, 0x14000204400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a460, 0x14000204400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140003321e0, 0x1014ec4a0, 0x1400002b640)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:05 server.go:3139: http: panic serving 127.0.0.1:61023: template: index.html:2: unexpected "{" in command
+goroutine 84 [running]:
+net/http.(*conn).serve.func1(0x1400012f5e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000113ad0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a540, 0x1014be7e0, 0x1400018d380, 0x14000131918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a540, 0x1400017a600)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a540, 0x1400017a600)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a540, 0x1400017a600)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a540, 0x1400017a600)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f5e0, 0x1014ec4a0, 0x14000151380)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:09 server.go:3139: http: panic serving 127.0.0.1:61024: template: index.html:2: unexpected "{" in command
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0x1400012f680)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000113d80)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a620, 0x1014be7e0, 0x1400018d900, 0x140002b5918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a620, 0x14000204500)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a620, 0x14000204500)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a620, 0x14000204500)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a620, 0x14000204500)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f680, 0x1014ec4a0, 0x1400028f740)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:09 server.go:3139: http: panic serving 127.0.0.1:61025: template: index.html:2: unexpected "{" in command
+goroutine 90 [running]:
+net/http.(*conn).serve.func1(0x1400012f720)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000013280)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a540, 0x1014be7e0, 0x14000285c80, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a540, 0x1400017a700)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a540, 0x1400017a700)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a540, 0x1400017a700)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a540, 0x1400017a700)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f720, 0x1014ec4a0, 0x14000151800)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:09 server.go:3139: http: panic serving 127.0.0.1:61026: template: index.html:2: unexpected "{" in command
+goroutine 95 [running]:
+net/http.(*conn).serve.func1(0x1400012f7c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000291000)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x140002389a0, 0x1014be7e0, 0x14000362400, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x140002389a0, 0x1400017a800)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x140002389a0, 0x1400017a800)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x140002389a0, 0x1400017a800)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x140002389a0, 0x1400017a800)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f7c0, 0x1014ec4a0, 0x14000151c80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:10 server.go:3139: http: panic serving 127.0.0.1:61027: template: index.html:2: unexpected "{" in command
+goroutine 104 [running]:
+net/http.(*conn).serve.func1(0x14000332280)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140000136d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x14000238a80, 0x1014be7e0, 0x14000362800, 0x140002b7918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x14000238a80, 0x14000294700)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x14000238a80, 0x14000294700)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x14000238a80, 0x14000294700)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x14000238a80, 0x14000294700)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000332280, 0x1014ec4a0, 0x1400028fb40)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:10 server.go:3139: http: panic serving 127.0.0.1:61028: template: index.html:2: unexpected "{" in command
+goroutine 105 [running]:
+net/http.(*conn).serve.func1(0x14000332320)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000113e90)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a620, 0x1014be7e0, 0x140003c2100, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a620, 0x14000204600)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a620, 0x14000204600)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a620, 0x14000204600)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a620, 0x14000204600)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000332320, 0x1014ec4a0, 0x1400002bf80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:10 server.go:3139: http: panic serving 127.0.0.1:61029: template: index.html:2: unexpected "{" in command
+goroutine 114 [running]:
+net/http.(*conn).serve.func1(0x1400028a3c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000291460)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a700, 0x1014be7e0, 0x140003c2480, 0x140002b9918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a700, 0x14000294800)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a700, 0x14000294800)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a700, 0x14000294800)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a700, 0x14000294800)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a3c0, 0x1014ec4a0, 0x1400028fe00)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:12 server.go:3139: http: panic serving 127.0.0.1:61031: template: index.html:2: unexpected "{" in command
+goroutine 130 [running]:
+net/http.(*conn).serve.func1(0x1400012f860)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000013970)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x14000238b60, 0x1014be7e0, 0x14000362c80, 0x140002b7918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x14000238b60, 0x14000294900)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x14000238b60, 0x14000294900)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x14000238b60, 0x14000294900)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x14000238b60, 0x14000294900)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f860, 0x1014ec4a0, 0x140003ca280)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:12 server.go:3139: http: panic serving 127.0.0.1:61032: template: index.html:2: unexpected "{" in command
+goroutine 131 [running]:
+net/http.(*conn).serve.func1(0x1400012f900)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140001fc140)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a700, 0x1014be7e0, 0x140001f8080, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a700, 0x1400017a900)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a700, 0x1400017a900)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a700, 0x1400017a900)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a700, 0x1400017a900)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400012f900, 0x1014ec4a0, 0x14000151ec0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:12 server.go:3139: http: panic serving 127.0.0.1:61033: template: index.html:2: unexpected "{" in command
+goroutine 119 [running]:
+net/http.(*conn).serve.func1(0x1400028a460)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000291720)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a7e0, 0x1014be7e0, 0x140003c2980, 0x140002b9918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a7e0, 0x14000294a00)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a7e0, 0x14000294a00)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a7e0, 0x14000294a00)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a7e0, 0x14000294a00)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a460, 0x1014ec4a0, 0x140003ca300)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:13 server.go:3139: http: panic serving 127.0.0.1:61034: template: index.html:2: unexpected "{" in command
+goroutine 146 [running]:
+net/http.(*conn).serve.func1(0x140003323c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000013a90)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a8c0, 0x1014be7e0, 0x140003c2e00, 0x140002b9918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a8c0, 0x14000294b00)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a8c0, 0x14000294b00)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a8c0, 0x14000294b00)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a8c0, 0x14000294b00)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140003323c0, 0x1014ec4a0, 0x140003ca780)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:13 server.go:3139: http: panic serving 127.0.0.1:61035: template: index.html:2: unexpected "{" in command
+goroutine 147 [running]:
+net/http.(*conn).serve.func1(0x14000332460)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140001fc3d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a7e0, 0x1014be7e0, 0x140001f8580, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a7e0, 0x14000204700)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a7e0, 0x14000204700)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a7e0, 0x14000204700)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a7e0, 0x14000204700)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000332460, 0x1014ec4a0, 0x1400037a800)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:13 server.go:3139: http: panic serving 127.0.0.1:61036: template: index.html:2: unexpected "{" in command
+goroutine 126 [running]:
+net/http.(*conn).serve.func1(0x1400028a500)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140001fc4c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029a9a0, 0x1014be7e0, 0x140003c3180, 0x140002b9918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029a9a0, 0x14000294c00)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029a9a0, 0x14000294c00)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029a9a0, 0x14000294c00)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029a9a0, 0x14000294c00)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a500, 0x1014ec4a0, 0x140003caa40)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:18 server.go:3139: http: panic serving 127.0.0.1:61037: template: index.html:2: unexpected "{" in command
+goroutine 129 [running]:
+net/http.(*conn).serve.func1(0x1400028a5a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000013ba0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400029aa80, 0x1014be7e0, 0x140003c3580, 0x140002b9918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400029aa80, 0x1400017aa00)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400029aa80, 0x1400017aa00)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400029aa80, 0x1400017aa00)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400029aa80, 0x1400017aa00)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a5a0, 0x1014ec4a0, 0x140001fa900)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:18 server.go:3139: http: panic serving 127.0.0.1:61038: template: index.html:2: unexpected "{" in command
+goroutine 162 [running]:
+net/http.(*conn).serve.func1(0x1400028a640)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x140001fc770)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a8c0, 0x1014be7e0, 0x140001f8b80, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a8c0, 0x14000294d00)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a8c0, 0x14000294d00)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a8c0, 0x14000294d00)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a8c0, 0x14000294d00)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400028a640, 0x1014ec4a0, 0x140003cad00)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:43:18 server.go:3139: http: panic serving 127.0.0.1:61039: template: index.html:2: unexpected "{" in command
+goroutine 152 [running]:
+net/http.(*conn).serve.func1(0x14000332500)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x101476560, 0x14000291d30)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1014ebbf0, 0x1400018a9a0, 0x1014be7e0, 0x140001f9000, 0x14000133918, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.index(0x1014ebbf0, 0x1400018a9a0, 0x14000204800)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:28 +0x23c
+net/http.HandlerFunc.ServeHTTP(0x1014ddf70, 0x1014ebbf0, 0x1400018a9a0, 0x14000204800)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x1016ef420, 0x1014ebbf0, 0x1400018a9a0, 0x14000204800)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x1400018a000, 0x1014ebbf0, 0x1400018a9a0, 0x14000204800)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000332500, 0x1014ec4a0, 0x1400037ac00)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:50 server.go:3139: http: panic serving 127.0.0.1:61093: template: todo_new.html:1: function "defime" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x14000137360)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x1400021e710)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140002222a0, 0x0, 0x0, 0x1400025fa98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140002222a0, 0x14000182300)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140002222a0, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140002222a0, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140002222a0, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137360, 0x1009d44e0, 0x14000096000)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:50 server.go:3139: http: panic serving 127.0.0.1:61094: template: todo_new.html:1: function "defime" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x14000137400)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098570)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac1c0, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac1c0, 0x140000a6100)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac1c0, 0x140000a6100)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac1c0, 0x140000a6100)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac1c0, 0x140000a6100)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137400, 0x1009d44e0, 0x140001584c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:50 server.go:3139: http: panic serving 127.0.0.1:61095: template: todo_new.html:1: function "defime" not defined
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0x140001375e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098740)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac2a0, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac2a0, 0x14000182400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac2a0, 0x14000182400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac2a0, 0x14000182400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac2a0, 0x14000182400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140001375e0, 0x1009d44e0, 0x14000158780)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:51 server.go:3139: http: panic serving 127.0.0.1:61096: template: todo_new.html:1: function "defime" not defined
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0x140002561e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x1400011b330)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140001922a0, 0x0, 0x0, 0x1400013fa98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140001922a0, 0x14000182500)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140001922a0, 0x14000182500)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140001922a0, 0x14000182500)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140001922a0, 0x14000182500)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140002561e0, 0x1009d44e0, 0x14000158840)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:51 server.go:3139: http: panic serving 127.0.0.1:61097: template: todo_new.html:1: function "defime" not defined
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0x14000256280)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098900)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac380, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac380, 0x1400024e300)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac380, 0x1400024e300)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac380, 0x1400024e300)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac380, 0x1400024e300)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000256280, 0x1009d44e0, 0x1400021a680)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:51 server.go:3139: http: panic serving 127.0.0.1:61098: template: todo_new.html:1: function "defime" not defined
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0x14000137680)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098ad0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac460, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac460, 0x14000182600)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac460, 0x14000182600)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac460, 0x14000182600)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac460, 0x14000182600)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137680, 0x1009d44e0, 0x14000158c00)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:57 server.go:3139: http: panic serving 127.0.0.1:61099: template: todo_new.html:1: function "defime" not defined
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0x14000137720)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098cb0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac540, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac540, 0x140000a6300)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac540, 0x140000a6300)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac540, 0x140000a6300)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac540, 0x140000a6300)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137720, 0x1009d44e0, 0x14000097700)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:57 server.go:3139: http: panic serving 127.0.0.1:61100: template: todo_new.html:1: function "defime" not defined
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0x140001377c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098e80)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac620, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac620, 0x14000182700)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac620, 0x14000182700)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac620, 0x14000182700)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac620, 0x14000182700)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140001377c0, 0x1009d44e0, 0x14000158c80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:49:57 server.go:3139: http: panic serving 127.0.0.1:61101: template: todo_new.html:1: function "defime" not defined
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0x14000137860)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x1400011b530)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x14000192380, 0x0, 0x0, 0x1400013fa98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x14000192380, 0x14000182800)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x14000192380, 0x14000182800)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x14000192380, 0x14000182800)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x14000192380, 0x14000182800)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137860, 0x1009d44e0, 0x14000158d00)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:50:27 server.go:3139: http: panic serving 127.0.0.1:61103: template: todo_new.html:1: function "defime" not defined
+goroutine 80 [running]:
+net/http.(*conn).serve.func1(0x140000de140)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000098f60)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x14000192460, 0x0, 0x0, 0x1400013fa98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x14000192460, 0x140000a6400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x14000192460, 0x140000a6400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x14000192460, 0x140000a6400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x14000192460, 0x140000a6400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140000de140, 0x1009d44e0, 0x14000097e80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:50:27 server.go:3139: http: panic serving 127.0.0.1:61104: template: todo_new.html:1: function "defime" not defined
+goroutine 84 [running]:
+net/http.(*conn).serve.func1(0x14000137900)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x14000099130)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x140000ac700, 0x0, 0x0, 0x1400013ba98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x140000ac700, 0x14000182900)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x140000ac700, 0x14000182900)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x140000ac700, 0x14000182900)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x140000ac700, 0x14000182900)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137900, 0x1009d44e0, 0x14000159100)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 17:50:27 server.go:3139: http: panic serving 127.0.0.1:61105: template: todo_new.html:1: function "defime" not defined
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0x14000256320)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x10095e560, 0x1400021e900)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x1009d3c30, 0x14000222380, 0x0, 0x0, 0x14000139a98, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:16 +0x244
+todo_app/app/controllers.todoNew(0x1009d3c30, 0x14000222380, 0x1400024e400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:37 +0xf8
+net/http.HandlerFunc.ServeHTTP(0x1009c5f90, 0x1009d3c30, 0x14000222380, 0x1400024e400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x100bd7420, 0x1009d3c30, 0x14000222380, 0x1400024e400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000192000, 0x1009d3c30, 0x14000222380, 0x1400024e400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000256320, 0x1009d44e0, 0x1400021a700)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:17 server.go:3139: http: panic serving 127.0.0.1:64434: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0x140001374a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x140000124c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x1400007a1c0, 0x102b85480, 0x1400002a580, 0x14000253948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x1400007a1c0, 0x14000182300, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x1400007a1c0, 0x14000182300)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x1400007a1c0, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x1400007a1c0, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x1400007a1c0, 0x14000182300)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140001374a0, 0x102bc06c0, 0x14000096000)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:17 server.go:3139: http: panic serving 127.0.0.1:64435: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0x14000137540)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x14000218950)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x1400021c380, 0x102b85480, 0x14000214ac0, 0x1400013f948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x1400021c380, 0x1400027e200, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x1400021c380, 0x1400027e200)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x1400021c380, 0x1400027e200)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x1400021c380, 0x1400027e200)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x1400021c380, 0x1400027e200)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137540, 0x102bc06c0, 0x14000158540)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:17 server.go:3139: http: panic serving 127.0.0.1:64450: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0x14000137720)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x14000218a40)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x140001961c0, 0x102b85480, 0x14000158c40, 0x140001bf948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x140001961c0, 0x14000182400, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x140001961c0, 0x14000182400)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x140001961c0, 0x14000182400)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x140001961c0, 0x14000182400)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x140001961c0, 0x14000182400)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137720, 0x102bc06c0, 0x14000158a80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:18 server.go:3139: http: panic serving 127.0.0.1:64455: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0x140001377c0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x1400011b930)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x140001962a0, 0x102b85480, 0x14000158f80, 0x140001c1948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x140001962a0, 0x1400027e500, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x140001962a0, 0x1400027e500)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x140001962a0, 0x1400027e500)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x140001962a0, 0x1400027e500)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x140001962a0, 0x1400027e500)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140001377c0, 0x102bc06c0, 0x14000215040)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:18 server.go:3139: http: panic serving 127.0.0.1:64456: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0x14000137860)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x14000218d00)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x1400021c460, 0x102b85480, 0x14000215240, 0x140001bf948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x1400021c460, 0x14000182500, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x1400021c460, 0x14000182500)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x1400021c460, 0x14000182500)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x1400021c460, 0x14000182500)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x1400021c460, 0x14000182500)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137860, 0x102bc06c0, 0x14000158d40)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:18 server.go:3139: http: panic serving 127.0.0.1:64457: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0x14000137900)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x1400011bbf0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x14000196380, 0x102b85480, 0x140001594c0, 0x140001c1948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x14000196380, 0x14000182600, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x14000196380, 0x14000182600)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x14000196380, 0x14000182600)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x14000196380, 0x14000182600)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x14000196380, 0x14000182600)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137900, 0x102bc06c0, 0x140001592c0)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:23 server.go:3139: http: panic serving 127.0.0.1:64478: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0x1400025c140)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x14000218e00)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x1400007a2a0, 0x102b85480, 0x1400002aa40, 0x140001bb948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x1400007a2a0, 0x14000182700, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x1400007a2a0, 0x14000182700)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x1400007a2a0, 0x14000182700)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x1400007a2a0, 0x14000182700)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x1400007a2a0, 0x14000182700)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400025c140, 0x102bc06c0, 0x14000159800)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:23 server.go:3139: http: panic serving 127.0.0.1:64479: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0x1400025c1e0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x1400011beb0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x14000196460, 0x102b85480, 0x14000159a00, 0x140001c1948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x14000196460, 0x1400027e600, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x14000196460, 0x1400027e600)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x14000196460, 0x1400027e600)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x14000196460, 0x1400027e600)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x14000196460, 0x1400027e600)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400025c1e0, 0x102bc06c0, 0x14000215580)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:23 server.go:3139: http: panic serving 127.0.0.1:64480: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0x1400025c280)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x140002190c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x1400021c540, 0x102b85480, 0x14000215a40, 0x140001bb948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x1400021c540, 0x1400027e700, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x1400021c540, 0x1400027e700)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x1400021c540, 0x1400027e700)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x1400021c540, 0x1400027e700)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x1400021c540, 0x1400027e700)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x1400025c280, 0x102bc06c0, 0x14000215840)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:53 server.go:3139: http: panic serving 127.0.0.1:64603: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 59 [running]:
+net/http.(*conn).serve.func1(0x140001379a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x140001f6170)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x14000196540, 0x102b85480, 0x14000159f40, 0x140001c1948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x14000196540, 0x1400027e800, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x14000196540, 0x1400027e800)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x14000196540, 0x1400027e800)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x14000196540, 0x1400027e800)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x14000196540, 0x1400027e800)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x140001379a0, 0x102bc06c0, 0x14000215d80)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:53 server.go:3139: http: panic serving 127.0.0.1:64604: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 60 [running]:
+net/http.(*conn).serve.func1(0x14000137a40)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x140001f6420)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x14000196620, 0x102b85480, 0x140001f8400, 0x140001c1948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x14000196620, 0x14000182800, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x14000196620, 0x14000182800)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x14000196620, 0x14000182800)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x14000196620, 0x14000182800)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x14000196620, 0x14000182800)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137a40, 0x102bc06c0, 0x14000159d40)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308
+2021/02/17 20:06:53 server.go:3139: http: panic serving 127.0.0.1:64605: template: todo_edit.html:1: unexpected "content" in define clause
+goroutine 85 [running]:
+net/http.(*conn).serve.func1(0x14000137ae0)
+	/usr/local/go/src/net/http/server.go:1824 +0x108
+panic(0x102b4a680, 0x14000012780)
+	/usr/local/go/src/runtime/panic.go:971 +0x3f4
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x102bbfe10, 0x1400021c620, 0x102b85480, 0x14000215f80, 0x140001bb948, 0x3, 0x3)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:18 +0x244
+todo_app/app/controllers.todoEdit(0x102bbfe10, 0x1400021c620, 0x14000182900, 0x1)
+	/Users/isseiterada/go/src/todo_app/app/controllers/route_main.go:78 +0x258
+todo_app/app/controllers.parseURL.func1(0x102bbfe10, 0x1400021c620, 0x14000182900)
+	/Users/isseiterada/go/src/todo_app/app/controllers/server.go:48 +0xf0
+net/http.HandlerFunc.ServeHTTP(0x1400011aff0, 0x102bbfe10, 0x1400021c620, 0x14000182900)
+	/usr/local/go/src/net/http/server.go:2069 +0x40
+net/http.(*ServeMux).ServeHTTP(0x102dc3420, 0x102bbfe10, 0x1400021c620, 0x14000182900)
+	/usr/local/go/src/net/http/server.go:2448 +0x190
+net/http.serverHandler.ServeHTTP(0x14000196000, 0x102bbfe10, 0x1400021c620, 0x14000182900)
+	/usr/local/go/src/net/http/server.go:2887 +0xbc
+net/http.(*conn).serve(0x14000137ae0, 0x102bc06c0, 0x140001f8740)
+	/usr/local/go/src/net/http/server.go:1952 +0x710
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x308

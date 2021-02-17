@@ -32,8 +32,7 @@ func GetTodo(id int) (todo Todo, err error) {
 		&todo.ID,
 		&todo.Content,
 		&todo.UserID,
-		&todo.CreatedAt,
-	)
+		&todo.CreatedAt)
 	return todo, err
 }
 
@@ -49,8 +48,7 @@ func GetTodos() (todos []Todo, err error) {
 			&todo.ID,
 			&todo.Content,
 			&todo.UserID,
-			&todo.CreatedAt,
-		)
+			&todo.CreatedAt)
 		if err != nil {
 			log.Fatalln(err)
 		}
@@ -74,12 +72,14 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 			&todo.ID,
 			&todo.Content,
 			&todo.UserID,
-			&todo.CreatedAt,
-		)
+			&todo.CreatedAt)
 		if err != nil {
 			log.Fatalln(err)
 		}
+		todos = append(todos, todo)
 	}
+	rows.Close()
+
 	return todos, err
 }
 
